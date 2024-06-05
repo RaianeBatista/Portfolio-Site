@@ -8,7 +8,7 @@ function Home() {
         <p>
           Olá, sou <br />
           <span>Raiane Batista</span> <br />
-          Dev Full Stack
+          Dev Front-end
         </p>
         <Link to='/sobre' className={`${styles.btn} ${styles.btn_blue}`}>
           Saiba mais sobre mim

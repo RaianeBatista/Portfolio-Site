@@ -28,7 +28,7 @@ function Sobre() {
 
           <p className={styles.description}>
             Estou participando da construção de um site (utilizando React JS,
-            Bootstrap e Java), sob a mentoria da instituição de ensino{' '}
+            Bootstrap e Java), sob a mentoria da instituição de ensino
             <span>Programar com você </span>
             em parceria com a <span>Elastcod</span>.
           </p>
