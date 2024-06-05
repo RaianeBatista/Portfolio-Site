@@ -1,21 +1,25 @@
 .sobre {
   width: 100%;
-  min-height: 85vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* respnsividade extra 02 */
 }
 
 .bio {
+  width: 100%;
+  height: auto;
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto 0.5rem;
 }
 
 .bio span {
-  color: var(--blue);
+  color: var(--primary);
   font-weight: bold;
 }
 
@@ -24,34 +28,79 @@
   font-weight: bold;
 }
 
-.textos h2,
-p {
-  margin-bottom: 1rem;
+.textos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 450px;
 }
 
-.avatar {
-  width: 200px;
-  height: 320px;
-  border-radius: 20%;
+.textos h2,
+p {
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  margin-top: 1rem;
+  font-size: clamp(0.8rem, 1.2vw, 2rem);
+}
+
+
+
+
+/* .bio .avatar {
+  width: clamp(6rem, 18vw, 24rem);
+  height: clamp(6rem, 18vw, 24rem);
+  padding-left: 1rem;
+  border-radius: 40%;
+} */
+
+.bio .avatar {
+  width: 300px;
+  height: 250px;
+
+  object-fit:contain;
+  border-radius: 100%;
+
 }
 
 .techs {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
 .techs h3 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
 }
 
 .icones {
   display: flex;
-  justify-content: space-between;
-  gap: 5rem;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 .icones img {
-  width: 100px;
-  height: 100px;
-  margin-left: 30px;
+  width: clamp(2rem, 6vw, 8rem);
+  height: clamp(2rem, 6vw, 8rem);
+}
+
+.icones figcaption {
+  font-size: clamp(.8rem,1.2vw,2rem);
+}
+
+/* responsividade */
+/* tablet */
+@media (max-width: 768px) {
+  .sobre {
+  margin-top: 1.5rem;
+    padding: 1.5rem .8rem;
+  }
+  .bio {
+    flex-direction: column;
+    gap: 0;
+  }
 }

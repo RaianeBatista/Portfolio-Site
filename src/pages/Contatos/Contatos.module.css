@@ -28,3 +28,16 @@
   transition: all 0.5s;
 }
 
+/* responsividade extra 02 */
+/* tablet */
+@media (max-width: 768px) {
+  .contatos {
+    padding-inline: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icones {
+    gap: 0.5rem;
+  }
+}

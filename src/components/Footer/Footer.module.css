@@ -4,10 +4,12 @@
   background-color: var(--primary);
   color: var(--white);
   font-weight: bold;
-  font-size: 1.125rem; /* = 18px*/
-
-
+  font-size: clamp(0.8rem, 1.7vw, 1.8rem);
   display: flex;
   align-items: center;
   justify-content: center;
+  /* aula 11 extra 01 */
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
